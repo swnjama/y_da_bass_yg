@@ -1,191 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> y da bass yg </title>
-<style>
-  h1, h2 {
-          text-align: center;
-    transform: skew(20deg);
-    font-size: 100px;
-        }
-   p {
-          max-width: 300px;
-          margin: 12px auto;
-          text-align: justify;
-          font-size: 25; 
-       
-        }
-  body{ 
-  background-image: url("newgif.gif");
-  background-size: cover;
-  background-attachment: fixed;
-  }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> y da bass yg </title>
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+        transform: skew(20deg);
+        font-size: 100px;
+      }
 
-  .album1{ 
-  width: 300px;
-  height: 300px; 
-  position: absolute; 
-  top: 70px;
-  margin: 20px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround 5s linear infinite; 
-  }
-  .album2{ 
-  width: 300px;
-  height: 300px; 
-  position: absolute; 
-  top: 250px;
-  margin: 20px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround2 5s linear infinite; 
-  }
-  .album3{ 
-  width: 300px;
-  height: 300px; 
-  margin: 20px;
-  position: absolute; 
-  top: 700px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround2 5s linear infinite; 
-  }
-  .album4{  
-  margin: 20px;
-  position: absolute; 
-   top: 800px;
-  z-index: -2;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround 5s linear infinite; 
-  }
-  .album5{ 
-  width: 300px;
-  height: 300px;  
-  margin: 20px;
-  position: absolute; 
-  top: 70px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround2 5s linear infinite; 
-  }
-  .album6{ 
-  width: 300px;
-  height: 300px; 
-  margin: 20px;
-  position: absolute; 
-  top: 450px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround2 5s linear infinite; 
-  }
-  .album7{ 
-  width: 300px;
-  height: 300px; 
-  margin: 20px;
-  position: absolute; 
-  top: 250px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround 5s linear infinite; 
-  }
-  .album8{ 
-  width: 300px;
-  height: 300px; 
-  position: absolute; 
-  margin: 20px;
-  top: 450px;
-  clip-path: circle(50% at 50% 50%);
-  animation: moveAround 5s linear infinite; 
-  }
-  
-  .leftside{ 
-  display: flex;
-  justify-content: flex-start;
-  
-  }
-  
-  .rightside{ 
-  display: flex;
-  justify-content: flex-end;
-  }
-   .centerimg{ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  
+      p {
+        max-width: 300px;
+        margin: 12px auto;
+        text-align: justify;
+        font-size: 25px;
+
+      }
+
+      body {
+        background-image: url("newgif.gif");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .album1 {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 70px;
+        margin: 20px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround 5s linear infinite;
+      }
+
+      .album2 {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 250px;
+        margin: 20px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround2 5s linear infinite;
+      }
+
+      .album3 {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        position: absolute;
+        top: 700px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround2 5s linear infinite;
+      }
+
+      .album4 {
+        margin: 20px;
+        position: absolute;
+        top: 800px;
+        z-index: -2;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround 5s linear infinite;
+      }
+
+      .album5 {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        position: absolute;
+        top: 70px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround2 5s linear infinite;
+      }
+
+      .album6 {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        position: absolute;
+        top: 450px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround2 5s linear infinite;
+      }
+
+      .album7 {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        position: absolute;
+        top: 250px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround 5s linear infinite;
+      }
+
+      .album8 {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        margin: 20px;
+        top: 450px;
+        clip-path: circle(50% at 50% 50%);
+        animation: moveAround 5s linear infinite;
+      }
+
+      .leftside {
+        display: flex;
+        justify-content: flex-start;
+
+      }
+
+      .rightside {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .centerimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       @keyframes moveAround {
-      0% {
-        transform: translateX(150px) translateY(0);
-      }
-      25% {
-        transform: translateX(300px) translateY(150px);
-      }
-      50% {
-        transform: translateX(150px) translateY(300px);
-      }
-      75% {
-        transform: translateX(0) translateY(150px);
-      }
-      100% {
-        transform: translateX(150px) translateY(0);
-      }
-    }
-  
-  @keyframes moveAround2 {
-      0% {
-        transform: translateX(150px) translateY(0);
-      }
-      25% {
-        transform: translateX(0) translateY(150px);
-      }
-      50% {
-        transform: translateX(150px) translateY(300px);
-      }
-      75% {
-        transform: translateX(300px) translateY(150px);
-      }
-      100% {
-        transform: translateX(150px) translateY(0);
-      }
-    }
-  
-</style>
-</head>
-<body>
+        0% {
+          transform: translateX(150px) translateY(0);
+        }
 
-<h1>y da bass yg? </h1>
+        25% {
+          transform: translateX(300px) translateY(150px);
+        }
 
-<p class="firstp"> the story starts on a fateful day in math class in 2019. 
-my friend at the time, while working on a question, played <a href=https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ>'the less i know the better'</a> and i got hooked.
-</p>
-<br> 
-<p class="secondp">
-i've always wanted to play the guitar, for as long as i could remember, but after tame impala became my 2nd loved artist in 2021, i knew that i wanted to learn the bass ... 
-</p>
+        50% {
+          transform: translateX(150px) translateY(300px);
+        }
 
-<br> 
-<p class="thirdp">
-  i am obessed with the bass of the bass, i love how deep and mysterious it is and how it just adds to the the overall instrumentals of the guitar. i am also in love with how the bass sounds by itself and it can be independent of the guitar. 
-</p>
-<br> 
-<p class="fourthp">
-  well thats the bit of history behind the bass, i think i just want it to be something i can use to destress to maybe perform at Open Mic nights and just have fun, im not trying to be a complete professional but if i could get to a solid level of being able to perform any song on the bass that would be amazing 
-</p>
+        75% {
+          transform: translateX(0) translateY(150px);
+        }
 
-<div class="leftside">
-  <img src="album1.jpeg" alt="jamalbumcover" class="album1">
-  <img src="album2.jpg" alt="hivemindcover" class="album2">
-  <img src="album3.jpeg" alt="sportscover" class="album8">
-  </div>
-<div class="rightside">
-  <img src="album6.jpg" alt="jillcover" class="album5">
-  <img src="album7.webp" alt="IVcover" class="album7">
-  <img src="album8.jpeg" alt="cruzcover" class="album6">
-</div>
+        100% {
+          transform: translateX(150px) translateY(0);
+        }
+      }
 
-<div class="centerimg"> 
-  <img src="album4.avif" alt="tamecover" class="album3">
-  <img src="album5.jpeg" alt="parcelscover" class="album4">
-</div>
-  
+      @keyframes moveAround2 {
+        0% {
+          transform: translateX(150px) translateY(0);
+        }
 
-</body>
+        25% {
+          transform: translateX(0) translateY(150px);
+        }
 
+        50% {
+          transform: translateX(150px) translateY(300px);
+        }
+
+        75% {
+          transform: translateX(300px) translateY(150px);
+        }
+
+        100% {
+          transform: translateX(150px) translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>y da bass yg? </h1>
+
+    <p class="firstp"> the story starts on a fateful day in math class in 2019.
+      my friend at the time, while working on a question, played <a href="https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ">'the less i know the better'</a> and i got hooked.
+    </p>
+    <br>
+    <p class="secondp">
+      i've always wanted to play the guitar, for as long as i could remember, but after tame impala became my 2nd loved artist in 2021, i knew that i wanted to learn the bass ...
+    </p>
+
+    <br>
+    <p class="thirdp">
+      i am obessed with the bass of the bass, i love how deep and mysterious it is and how it just adds to the the overall instrumentals of the guitar. i am also in love with how the bass sounds by itself and it can be independent of the guitar.
+    </p>
+    <br>
+    <p class="fourthp">
+      well thats the bit of history behind the bass, i think i just want it to be something i can use to destress to maybe perform at Open Mic nights and just have fun, im not trying to be a complete professional but if i could get to a solid level of being able to perform any song on the bass that would be amazing
+    </p>
+
+    <div class="leftside">
+      <img src="album1.jpeg" alt="jamalbumcover" class="album1">
+      <img src="album2.jpg" alt="hivemindcover" class="album2">
+      <img src="album3.jpeg" alt="sportscover" class="album8">
+    </div>
+    <div class="rightside">
+      <img src="album6.jpg" alt="jillcover" class="album5">
+      <img src="album7.webp" alt="IVcover" class="album7">
+      <img src="album8.jpeg" alt="cruzcover" class="album6">
+    </div>
+
+    <div class="centerimg">
+      <img src="album4.avif" alt="tamecover" class="album3">
+      <img src="album5.jpeg" alt="parcelscover" class="album4">
+    </div>
+
+
+  </body>
+</html>
