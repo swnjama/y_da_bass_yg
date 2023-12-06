@@ -7,6 +7,8 @@
 <style>
   h1, h2 {
           text-align: center;
+    transform: skew(20deg);
+    font-size: 100px;
         }
    p {
           max-width: 300px;
@@ -15,50 +17,72 @@
         }
   
   .album1{ 
-  width: 150px;
-  height: 150px; 
+  width: 300px;
+  height: 300px; 
   position: absolute; 
+  top: 70px;
   margin: 20px;
+  clip-path: circle(50% at 50% 50%);
   }
   .album2{ 
-  width: 150px;
-  height: 150px; 
+  width: 300px;
+  height: 300px; 
   position: absolute; 
+  top: 250px;
   margin: 20px;
+  clip-path: circle(50% at 50% 50%);
   }
   .album3{ 
-  width: 150px;
-  height: 150px; 
+  width: 300px;
+  height: 300px; 
   margin: 20px;
   position: absolute; 
-  top: 600px;
+  top: 700px;
+  clip-path: circle(50% at 50% 50%);
   }
   .album4{  
   margin: 20px;
   position: absolute; 
-   top: 600px;
+   top: 800px;
   z-index: -1;
+  clip-path: circle(50% at 50% 50%);
   }
   .album5{ 
-  width: 150px;
-  height: 150px; 
+  width: 300px;
+  height: 300px;  
   margin: 20px;
   position: absolute; 
   top: 70px;
+  clip-path: circle(50% at 50% 50%);
   }
   .album6{ 
-  width: 150px;
-  height: 150px; 
+  width: 300px;
+  height: 300px; 
   margin: 20px;
   position: absolute; 
   top: 450px;
+  clip-path: circle(50% at 50% 50%);
   }
   .album7{ 
-  width: 150px;
-  height: 150px; 
+  width: 300px;
+  height: 300px; 
   margin: 20px;
   position: absolute; 
   top: 250px;
+  clip-path: circle(50% at 50% 50%);
+  }
+  .album8{ 
+  width: 300px;
+  height: 300px; 
+  position: absolute; 
+  margin: 20px;
+  top: 450px;
+  clip-path: circle(50% at 50% 50%);
+  }
+  
+  .leftside{ 
+  display: flex;
+  justify-content: flex-start;
   }
   
   .rightside{ 
@@ -76,28 +100,29 @@
 <body>
 
 <h1>y da bass yg? </h1>
-<img src="album1.jpeg" alt="jamalbumcover" class="album1">
+
 <p class="firstp"> the story starts on a fateful day in math class in 2019. 
 my friend at the time, while working on a question, played <a href=https://open.spotify.com/track/6K4t31amVTZDgR3sKmwUJJ>'the less i know the better'</a> and i got hooked.
-
 </p>
 <br> 
 <p class="secondp">
 i've always wanted to play the guitar, for as long as i could remember, but after tame impala became my 2nd loved artist in 2021, i knew that i wanted to learn the bass ... 
 </p>
-<img src="album2.jpg" alt="hivemindcover" class="album2">
+
 <br> 
 <p class="thirdp">
   i am obessed with the bass of the bass, i love how deep and mysterious it is and how it just adds to the the overall instrumentals of the guitar. i am also in love with how the bass sounds by itself and it can be independent of the guitar. 
 </p>
 <br> 
-
-<img src="album3.jpeg" alt="sportscover" class="album2">
 <p class="fourthp">
   well thats the bit of history behind the bass, i think i just want it to be something i can use to destress to maybe perform at Open Mic nights and just have fun, im not trying to be a complete professional but if i could get to a solid level of being able to perform any song on the bass that would be amazing 
 </p>
 
-
+<div class="leftside">
+  <img src="album1.jpeg" alt="jamalbumcover" class="album1">
+  <img src="album2.jpg" alt="hivemindcover" class="album2">
+  <img src="album3.jpeg" alt="sportscover" class="album8">
+  </div>
 <div class="rightside">
   <img src="album6.jpg" alt="jillcover" class="album5">
   <img src="album7.webp" alt="IVcover" class="album7">
