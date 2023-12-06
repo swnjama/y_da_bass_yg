@@ -23,6 +23,7 @@
   top: 70px;
   margin: 20px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround 5s linear infinite; 
   }
   .album2{ 
   width: 300px;
@@ -31,6 +32,7 @@
   top: 250px;
   margin: 20px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround2 5s linear infinite; 
   }
   .album3{ 
   width: 300px;
@@ -39,6 +41,7 @@
   position: absolute; 
   top: 700px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround2 5s linear infinite; 
   }
   .album4{  
   margin: 20px;
@@ -46,6 +49,7 @@
    top: 800px;
   z-index: -1;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround 5s linear infinite; 
   }
   .album5{ 
   width: 300px;
@@ -54,6 +58,7 @@
   position: absolute; 
   top: 70px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround2 5s linear infinite; 
   }
   .album6{ 
   width: 300px;
@@ -62,6 +67,7 @@
   position: absolute; 
   top: 450px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround2 5s linear infinite; 
   }
   .album7{ 
   width: 300px;
@@ -70,6 +76,7 @@
   position: absolute; 
   top: 250px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround 5s linear infinite; 
   }
   .album8{ 
   width: 300px;
@@ -78,11 +85,13 @@
   margin: 20px;
   top: 450px;
   clip-path: circle(50% at 50% 50%);
+  animation: moveAround 5s linear infinite; 
   }
   
   .leftside{ 
   display: flex;
   justify-content: flex-start;
+  
   }
   
   .rightside{ 
@@ -94,6 +103,42 @@
   justify-content: center;
   align-items: center;
   }
+  
+      @keyframes moveAround {
+      0% {
+        transform: translateX(150px) translateY(0);
+      }
+      25% {
+        transform: translateX(300px) translateY(150px);
+      }
+      50% {
+        transform: translateX(150px) translateY(300px);
+      }
+      75% {
+        transform: translateX(0) translateY(150px);
+      }
+      100% {
+        transform: translateX(150px) translateY(0);
+      }
+    }
+  
+  @keyframes moveAround2 {
+      0% {
+        transform: translateX(150px) translateY(0);
+      }
+      25% {
+        transform: translateX(0) translateY(150px);
+      }
+      50% {
+        transform: translateX(150px) translateY(300px);
+      }
+      75% {
+        transform: translateX(300px) translateY(150px);
+      }
+      100% {
+        transform: translateX(150px) translateY(0);
+      }
+    }
   
 </style>
 </head>
@@ -133,5 +178,7 @@ i've always wanted to play the guitar, for as long as i could remember, but afte
   <img src="album4.avif" alt="tamecover" class="album3">
   <img src="album5.jpeg" alt="parcelscover" class="album4">
 </div>
+  
+
 </body>
 
